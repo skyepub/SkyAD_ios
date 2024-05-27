@@ -1,0 +1,74 @@
+/*
+  Localizable.strings
+  SkyAD
+
+  Created by 하늘나무 on 2020/11/11.
+  Copyright © 2020 Dev. All rights reserved.
+*/
+"input_hint"="Input Keyword";
+"cancel"="Cancel";
+"highlight"="Highlight";
+"note"="Note";
+
+"match"="matches";
+"chapter"="Chapter";
+"page"="Page";
+"search_more"="Search More";
+"search_finished"="Search Finished";
+"found"="Found";
+
+"bookmark"="Bookmark";
+"toc"="Contents";
+"resume"="Resume";
+
+"delete"="Delete";
+"ok"="OK";
+
+"open"="Open Book";
+"open_the_first_page"="Open The First Page";
+"delete_book"="Delete Book";
+
+"sort_by"="Select the Sort Type to Display Books";
+"title"="Title";
+"author"="Author";
+"last_read"="Last Read";
+"no_sort"="No Sort";
+
+"title_activity_setting"="Setting";
+
+"setting"="Setting";
+"layout"="Layout";
+"double_paged"="Double Paged For Landscape";
+"rotation_lock"="Lock Rotation";
+"global_pagination"="Global Pagination";
+
+"network"="Network";
+"allow3g4g"="3G/4G Download";
+
+"theme"="Theme";
+"themewhite"="Theme White";
+"themebrown"="Theme Brown";
+"themedark"="Theme Dark";
+"themeblack"="Theme Black";
+
+"page_transition_effect"="Page Transition Effect";
+"none_effect"="None";
+"slide_effect"="Slide Effect";
+"curl_effect"="Curl Effect";
+
+"voice"="Voice";
+"mediaoverlay"="MediaOverlay";
+"tts"="Text To Speech";
+"auto_start_playing"="Auto Start Playing";
+"auto_load_new_chapter"="Auto Load New Chapter";
+"highlight_text_to_voice"="Highlight Text To Voice";
+
+"global_pagination_warning"="Global Pagination enables to show the page number for the entire of book.\n
+It may take long time to finish the calculation of pages for whole book.\n
+Whenever font name or font size are changed, Global Pagination tries to calculate the total page number again.\n
+while the Global Pagination is going on, some user interfaces will be restricted to use.";
+
+"information"="Information";
+"reader"="SkyEpub SDK Advanced Demo IV In Java";
+"skyepub"="Copyrights SkyEpub Inc.";
+

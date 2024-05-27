@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2149B8A26DCE60B00F98DAF /* uwch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2149B8826DCE5AE00F98DAF /* uwch.ttf */; };
+		A226F89126D41535004A6F40 /* libskyepub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A226F88E26D414E6004A6F40 /* libskyepub.a */; };
+		A247A175252B7EAB00749F1A /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247A174252B7EAB00749F1A /* MagazineViewController.swift */; };
+		A247A18C252BBDB200749F1A /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247A18B252BBDB200749F1A /* ThumbnailView.swift */; };
+		A27805572530302A00B374C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27805562530302A00B374C5 /* HomeViewController.swift */; };
+		A278055C25306E0300B374C5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278055B25306E0300B374C5 /* SettingViewController.swift */; };
+		A2780561253084C800B374C5 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2780560253084C800B374C5 /* BookCollectionViewCell.swift */; };
+		A28D7B2F24F8248E00CD0939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28D7B2E24F8248E00CD0939 /* AppDelegate.swift */; };
+		A28D7B3124F8248E00CD0939 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28D7B3024F8248E00CD0939 /* SceneDelegate.swift */; };
+		A28D7B3624F8248E00CD0939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28D7B3424F8248E00CD0939 /* Main.storyboard */; };
+		A28D7B3B24F8249100CD0939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28D7B3924F8249100CD0939 /* LaunchScreen.storyboard */; };
+		A28D7B7124F99DE000CD0939 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28D7B7024F99DE000CD0939 /* BookViewController.swift */; };
+		A28E59DB278CB8A600A3A4E0 /* Alice.epub in Resources */ = {isa = PBXBuildFile; fileRef = A28E59DA278CB89300A3A4E0 /* Alice.epub */; };
+		A28E59DC278CB8A800A3A4E0 /* Doctor.epub in Resources */ = {isa = PBXBuildFile; fileRef = A28E59D9278CB89200A3A4E0 /* Doctor.epub */; };
+		A28E59DE278CB8D400A3A4E0 /* Mayflower Antique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A28E59DD278CB8C900A3A4E0 /* Mayflower Antique.ttf */; };
+		A296554125835E3400D6FD3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A296554025835E3300D6FD3F /* Assets.xcassets */; };
+		A2B730E8250B04270049C63B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B730DE250B04250049C63B /* FMDatabase.m */; };
+		A2B730E9250B04270049C63B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B730DF250B04260049C63B /* FMDatabaseQueue.m */; };
+		A2B730EA250B04270049C63B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B730E3250B04260049C63B /* FMResultSet.m */; };
+		A2B730EB250B04270049C63B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B730E5250B04260049C63B /* FMDatabaseAdditions.m */; };
+		A2B730EC250B04270049C63B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B730E6250B04260049C63B /* FMDatabasePool.m */; };
+		A2B730F3250B52610049C63B /* Books.sql in Resources */ = {isa = PBXBuildFile; fileRef = A2B730EF250B52600049C63B /* Books.sql */; };
+		A2B730F4250B52610049C63B /* custom.css in Resources */ = {isa = PBXBuildFile; fileRef = A2B730F0250B52600049C63B /* custom.css */; };
+		A2B730F5250B52610049C63B /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = A2B730F1250B52610049C63B /* script.js */; };
+		A2B730F6250B52610049C63B /* scriptForFixed.js in Resources */ = {isa = PBXBuildFile; fileRef = A2B730F2250B52610049C63B /* scriptForFixed.js */; };
+		A2B730F8250C4E4C0049C63B /* SkyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B730F7250C4E4C0049C63B /* SkyData.swift */; };
+		A2B7310625146B0F0049C63B /* SearchResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B7310525146B0F0049C63B /* SearchResultView.xib */; };
+		A2B7310825146B2A0049C63B /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B7310725146B2A0049C63B /* SearchResultView.swift */; };
+		A2EA78A9255BB5B900F4A48F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2EA78AB255BB5B900F4A48F /* Localizable.strings */; };
+		A2ED33FE2521D0EC0087C98E /* BookmarksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED33FD2521D0EC0087C98E /* BookmarksTableViewCell.swift */; };
+		A2ED34062521D10A0087C98E /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED34052521D10A0087C98E /* ContentsTableViewCell.swift */; };
+		A2ED340B2521D1330087C98E /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED340A2521D1330087C98E /* NotesTableViewCell.swift */; };
+		A2F44BD424FF21DC0079F795 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F44BD324FF21DC0079F795 /* Setting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A28D7B4224F8249100CD0939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28D7B2324F8248E00CD0939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28D7B2A24F8248E00CD0939;
+			remoteInfo = SkyReader;
+		};
+		A28D7B4D24F8249100CD0939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28D7B2324F8248E00CD0939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28D7B2A24F8248E00CD0939;
+			remoteInfo = SkyReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2149B8826DCE5AE00F98DAF /* uwch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uwch.ttf; sourceTree = "<group>"; };
+		A226F88E26D414E6004A6F40 /* libskyepub.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libskyepub.a; sourceTree = "<group>"; };
+		A247A174252B7EAB00749F1A /* MagazineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
+		A247A18B252BBDB200749F1A /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		A27805562530302A00B374C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A278055B25306E0300B374C5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A2780560253084C800B374C5 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		A28D7B2B24F8248E00CD0939 /* SkyAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28D7B2E24F8248E00CD0939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A28D7B3024F8248E00CD0939 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A28D7B3524F8248E00CD0939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A28D7B3A24F8249100CD0939 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A28D7B3C24F8249100CD0939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28D7B4124F8249100CD0939 /* SkyADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyADTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28D7B4C24F8249100CD0939 /* SkyADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyADUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28D7B5F24F824CF00CD0939 /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		A28D7B6024F824CF00CD0939 /* FixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedViewController.h; sourceTree = "<group>"; };
+		A28D7B6224F824CF00CD0939 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A28D7B6324F824CF00CD0939 /* SkyDRMControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyDRMControl.h; sourceTree = "<group>"; };
+		A28D7B6424F824CF00CD0939 /* SpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		A28D7B6524F824CF00CD0939 /* SkyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyProvider.h; sourceTree = "<group>"; };
+		A28D7B6624F824CF00CD0939 /* Highlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Highlight.h; sourceTree = "<group>"; };
+		A28D7B6724F824CF00CD0939 /* SkyKeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyKeyManager.h; sourceTree = "<group>"; };
+		A28D7B6824F824CF00CD0939 /* ContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentProvider.h; sourceTree = "<group>"; };
+		A28D7B6924F824CF00CD0939 /* BookInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookInformation.h; sourceTree = "<group>"; };
+		A28D7B6B24F824F800CD0939 /* SkyEpub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkyEpub.h; sourceTree = "<group>"; };
+		A28D7B6C24F826EE00CD0939 /* ReflowableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflowableViewController.h; sourceTree = "<group>"; };
+		A28D7B7024F99DE000CD0939 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		A28E59D9278CB89200A3A4E0 /* Doctor.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doctor.epub; sourceTree = "<group>"; };
+		A28E59DA278CB89300A3A4E0 /* Alice.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alice.epub; sourceTree = "<group>"; };
+		A28E59DD278CB8C900A3A4E0 /* Mayflower Antique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mayflower Antique.ttf"; sourceTree = "<group>"; };
+		A296554025835E3300D6FD3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2B730DB250B04250049C63B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A2B730DD250B04250049C63B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		A2B730DE250B04250049C63B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		A2B730DF250B04260049C63B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A2B730E0250B04260049C63B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		A2B730E1250B04260049C63B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A2B730E2250B04260049C63B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		A2B730E3250B04260049C63B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		A2B730E4250B04260049C63B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		A2B730E5250B04260049C63B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A2B730E6250B04260049C63B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		A2B730ED250B4DB90049C63B /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		A2B730EF250B52600049C63B /* Books.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Books.sql; sourceTree = "<group>"; };
+		A2B730F0250B52600049C63B /* custom.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = custom.css; sourceTree = "<group>"; };
+		A2B730F1250B52610049C63B /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		A2B730F2250B52610049C63B /* scriptForFixed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = scriptForFixed.js; sourceTree = "<group>"; };
+		A2B730F7250C4E4C0049C63B /* SkyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyData.swift; sourceTree = "<group>"; };
+		A2B7310525146B0F0049C63B /* SearchResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultView.xib; sourceTree = "<group>"; };
+		A2B7310725146B2A0049C63B /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		A2EA78AA255BB5B900F4A48F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2EA78AC255BB62800F4A48F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		A2EA78AD255BB62800F4A48F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A2EA78AE255BB62800F4A48F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A2EA78B0255BB64500F4A48F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		A2ED33FD2521D0EC0087C98E /* BookmarksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewCell.swift; sourceTree = "<group>"; };
+		A2ED34052521D10A0087C98E /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
+		A2ED340A2521D1330087C98E /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		A2F44BD324FF21DC0079F795 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		A2FEDDAA259D267500E9EC9B /* libskyepub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libskyepub.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A28D7B2824F8248E00CD0939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A226F89126D41535004A6F40 /* libskyepub.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B3E24F8249100CD0939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B4924F8249100CD0939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2149B8626DCE45800F98DAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A28E59DD278CB8C900A3A4E0 /* Mayflower Antique.ttf */,
+				A2149B8826DCE5AE00F98DAF /* uwch.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A28D7B2224F8248E00CD0939 = {
+			isa = PBXGroup;
+			children = (
+				A2EA78AB255BB5B900F4A48F /* Localizable.strings */,
+				A28D7B5E24F824A800CD0939 /* SkyEpub */,
+				A2B730DA250B04110049C63B /* fmdb */,
+				A28D7B2D24F8248E00CD0939 /* SkyAD */,
+				A28D7B2C24F8248E00CD0939 /* Products */,
+				A28D7B6D24F8302D00CD0939 /* Samples */,
+				A2B730EE250B52170049C63B /* Scripts */,
+				A2149B8626DCE45800F98DAF /* Fonts */,
+				A2B730ED250B4DB90049C63B /* Bridge.h */,
+				A2FEDDA9259D267500E9EC9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A28D7B2C24F8248E00CD0939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A28D7B2B24F8248E00CD0939 /* SkyAD.app */,
+				A28D7B4124F8249100CD0939 /* SkyADTests.xctest */,
+				A28D7B4C24F8249100CD0939 /* SkyADUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A28D7B2D24F8248E00CD0939 /* SkyAD */ = {
+			isa = PBXGroup;
+			children = (
+				A296554025835E3300D6FD3F /* Assets.xcassets */,
+				A28D7B7024F99DE000CD0939 /* BookViewController.swift */,
+				A247A174252B7EAB00749F1A /* MagazineViewController.swift */,
+				A27805562530302A00B374C5 /* HomeViewController.swift */,
+				A278055B25306E0300B374C5 /* SettingViewController.swift */,
+				A2B730F7250C4E4C0049C63B /* SkyData.swift */,
+				A2F44BD324FF21DC0079F795 /* Setting.swift */,
+				A28D7B2E24F8248E00CD0939 /* AppDelegate.swift */,
+				A28D7B3424F8248E00CD0939 /* Main.storyboard */,
+				A28D7B3924F8249100CD0939 /* LaunchScreen.storyboard */,
+				A2B7310525146B0F0049C63B /* SearchResultView.xib */,
+				A2780560253084C800B374C5 /* BookCollectionViewCell.swift */,
+				A2ED33FD2521D0EC0087C98E /* BookmarksTableViewCell.swift */,
+				A2ED34052521D10A0087C98E /* ContentsTableViewCell.swift */,
+				A2ED340A2521D1330087C98E /* NotesTableViewCell.swift */,
+				A2B7310725146B2A0049C63B /* SearchResultView.swift */,
+				A247A18B252BBDB200749F1A /* ThumbnailView.swift */,
+				A28D7B3024F8248E00CD0939 /* SceneDelegate.swift */,
+				A28D7B3C24F8249100CD0939 /* Info.plist */,
+			);
+			path = SkyAD;
+			sourceTree = "<group>";
+		};
+		A28D7B5E24F824A800CD0939 /* SkyEpub */ = {
+			isa = PBXGroup;
+			children = (
+				A226F88E26D414E6004A6F40 /* libskyepub.a */,
+				A28D7B6B24F824F800CD0939 /* SkyEpub.h */,
+				A28D7B6C24F826EE00CD0939 /* ReflowableViewController.h */,
+				A28D7B6024F824CF00CD0939 /* FixedViewController.h */,
+				A28D7B6224F824CF00CD0939 /* Book.h */,
+				A28D7B6924F824CF00CD0939 /* BookInformation.h */,
+				A28D7B6824F824CF00CD0939 /* ContentProvider.h */,
+				A28D7B6624F824CF00CD0939 /* Highlight.h */,
+				A28D7B5F24F824CF00CD0939 /* SearchResult.h */,
+				A28D7B6324F824CF00CD0939 /* SkyDRMControl.h */,
+				A28D7B6724F824CF00CD0939 /* SkyKeyManager.h */,
+				A28D7B6524F824CF00CD0939 /* SkyProvider.h */,
+				A28D7B6424F824CF00CD0939 /* SpeechSynthesizer.h */,
+			);
+			path = SkyEpub;
+			sourceTree = "<group>";
+		};
+		A28D7B6D24F8302D00CD0939 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				A28E59DA278CB89300A3A4E0 /* Alice.epub */,
+				A28E59D9278CB89200A3A4E0 /* Doctor.epub */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		A2B730DA250B04110049C63B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				A2B730E2250B04260049C63B /* FMDatabase.h */,
+				A2B730DE250B04250049C63B /* FMDatabase.m */,
+				A2B730E1250B04260049C63B /* FMDatabaseAdditions.h */,
+				A2B730E5250B04260049C63B /* FMDatabaseAdditions.m */,
+				A2B730DD250B04250049C63B /* FMDatabasePool.h */,
+				A2B730E6250B04260049C63B /* FMDatabasePool.m */,
+				A2B730DB250B04250049C63B /* FMDatabaseQueue.h */,
+				A2B730DF250B04260049C63B /* FMDatabaseQueue.m */,
+				A2B730E0250B04260049C63B /* FMDB.h */,
+				A2B730E4250B04260049C63B /* FMResultSet.h */,
+				A2B730E3250B04260049C63B /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		A2B730EE250B52170049C63B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A2B730EF250B52600049C63B /* Books.sql */,
+				A2B730F0250B52600049C63B /* custom.css */,
+				A2B730F1250B52610049C63B /* script.js */,
+				A2B730F2250B52610049C63B /* scriptForFixed.js */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A2FEDDA9259D267500E9EC9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2FEDDAA259D267500E9EC9B /* libskyepub.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A28D7B2A24F8248E00CD0939 /* SkyAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28D7B5524F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyAD" */;
+			buildPhases = (
+				A28D7B2724F8248E00CD0939 /* Sources */,
+				A28D7B2824F8248E00CD0939 /* Frameworks */,
+				A28D7B2924F8248E00CD0939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyAD;
+			productName = SkyReader;
+			productReference = A28D7B2B24F8248E00CD0939 /* SkyAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A28D7B4024F8249100CD0939 /* SkyADTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28D7B5824F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyADTests" */;
+			buildPhases = (
+				A28D7B3D24F8249100CD0939 /* Sources */,
+				A28D7B3E24F8249100CD0939 /* Frameworks */,
+				A28D7B3F24F8249100CD0939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28D7B4324F8249100CD0939 /* PBXTargetDependency */,
+			);
+			name = SkyADTests;
+			productName = SkyReaderTests;
+			productReference = A28D7B4124F8249100CD0939 /* SkyADTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A28D7B4B24F8249100CD0939 /* SkyADUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28D7B5B24F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyADUITests" */;
+			buildPhases = (
+				A28D7B4824F8249100CD0939 /* Sources */,
+				A28D7B4924F8249100CD0939 /* Frameworks */,
+				A28D7B4A24F8249100CD0939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28D7B4E24F8249100CD0939 /* PBXTargetDependency */,
+			);
+			name = SkyADUITests;
+			productName = SkyReaderUITests;
+			productReference = A28D7B4C24F8249100CD0939 /* SkyADUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A28D7B2324F8248E00CD0939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Dev;
+				TargetAttributes = {
+					A28D7B2A24F8248E00CD0939 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					A28D7B4024F8249100CD0939 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A28D7B2A24F8248E00CD0939;
+					};
+					A28D7B4B24F8249100CD0939 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = A28D7B2A24F8248E00CD0939;
+					};
+				};
+			};
+			buildConfigurationList = A28D7B2624F8248E00CD0939 /* Build configuration list for PBXProject "SkyAD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ko,
+			);
+			mainGroup = A28D7B2224F8248E00CD0939;
+			productRefGroup = A28D7B2C24F8248E00CD0939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A28D7B2A24F8248E00CD0939 /* SkyAD */,
+				A28D7B4024F8249100CD0939 /* SkyADTests */,
+				A28D7B4B24F8249100CD0939 /* SkyADUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A28D7B2924F8248E00CD0939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2149B8A26DCE60B00F98DAF /* uwch.ttf in Resources */,
+				A28E59DC278CB8A800A3A4E0 /* Doctor.epub in Resources */,
+				A2B730F3250B52610049C63B /* Books.sql in Resources */,
+				A28E59DB278CB8A600A3A4E0 /* Alice.epub in Resources */,
+				A296554125835E3400D6FD3F /* Assets.xcassets in Resources */,
+				A2EA78A9255BB5B900F4A48F /* Localizable.strings in Resources */,
+				A28E59DE278CB8D400A3A4E0 /* Mayflower Antique.ttf in Resources */,
+				A2B730F6250B52610049C63B /* scriptForFixed.js in Resources */,
+				A2B730F5250B52610049C63B /* script.js in Resources */,
+				A2B730F4250B52610049C63B /* custom.css in Resources */,
+				A28D7B3B24F8249100CD0939 /* LaunchScreen.storyboard in Resources */,
+				A28D7B3624F8248E00CD0939 /* Main.storyboard in Resources */,
+				A2B7310625146B0F0049C63B /* SearchResultView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B3F24F8249100CD0939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B4A24F8249100CD0939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A28D7B2724F8248E00CD0939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F44BD424FF21DC0079F795 /* Setting.swift in Sources */,
+				A2ED33FE2521D0EC0087C98E /* BookmarksTableViewCell.swift in Sources */,
+				A247A175252B7EAB00749F1A /* MagazineViewController.swift in Sources */,
+				A2ED340B2521D1330087C98E /* NotesTableViewCell.swift in Sources */,
+				A2B7310825146B2A0049C63B /* SearchResultView.swift in Sources */,
+				A27805572530302A00B374C5 /* HomeViewController.swift in Sources */,
+				A2ED34062521D10A0087C98E /* ContentsTableViewCell.swift in Sources */,
+				A2B730F8250C4E4C0049C63B /* SkyData.swift in Sources */,
+				A28D7B7124F99DE000CD0939 /* BookViewController.swift in Sources */,
+				A2B730E9250B04270049C63B /* FMDatabaseQueue.m in Sources */,
+				A2B730E8250B04270049C63B /* FMDatabase.m in Sources */,
+				A247A18C252BBDB200749F1A /* ThumbnailView.swift in Sources */,
+				A2780561253084C800B374C5 /* BookCollectionViewCell.swift in Sources */,
+				A2B730EB250B04270049C63B /* FMDatabaseAdditions.m in Sources */,
+				A28D7B2F24F8248E00CD0939 /* AppDelegate.swift in Sources */,
+				A2B730EC250B04270049C63B /* FMDatabasePool.m in Sources */,
+				A278055C25306E0300B374C5 /* SettingViewController.swift in Sources */,
+				A2B730EA250B04270049C63B /* FMResultSet.m in Sources */,
+				A28D7B3124F8248E00CD0939 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B3D24F8249100CD0939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28D7B4824F8249100CD0939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A28D7B4324F8249100CD0939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28D7B2A24F8248E00CD0939 /* SkyAD */;
+			targetProxy = A28D7B4224F8249100CD0939 /* PBXContainerItemProxy */;
+		};
+		A28D7B4E24F8249100CD0939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28D7B2A24F8248E00CD0939 /* SkyAD */;
+			targetProxy = A28D7B4D24F8249100CD0939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A28D7B3424F8248E00CD0939 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28D7B3524F8248E00CD0939 /* Base */,
+				A2EA78AC255BB62800F4A48F /* ko */,
+				A2EA78B0255BB64500F4A48F /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A28D7B3924F8249100CD0939 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A28D7B3A24F8249100CD0939 /* Base */,
+				A2EA78AD255BB62800F4A48F /* ko */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A2EA78AB255BB5B900F4A48F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EA78AA255BB5B900F4A48F /* en */,
+				A2EA78AE255BB62800F4A48F /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A28D7B5324F8249100CD0939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A28D7B5424F8249100CD0939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A28D7B5624F8249100CD0939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = SkyAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyEpub",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A28D7B5724F8249100CD0939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = SkyAD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SkyEpub",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridge.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A28D7B5924F8249100CD0939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				INFOPLIST_FILE = SkyReaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyAD.app/SkyAD";
+			};
+			name = Debug;
+		};
+		A28D7B5A24F8249100CD0939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				INFOPLIST_FILE = SkyReaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyAD.app/SkyAD";
+			};
+			name = Release;
+		};
+		A28D7B5C24F8249100CD0939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				INFOPLIST_FILE = SkyReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyReader;
+			};
+			name = Debug;
+		};
+		A28D7B5D24F8249100CD0939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74389CSWT5;
+				INFOPLIST_FILE = SkyReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skyepub.SkyReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A28D7B2624F8248E00CD0939 /* Build configuration list for PBXProject "SkyAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28D7B5324F8249100CD0939 /* Debug */,
+				A28D7B5424F8249100CD0939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28D7B5524F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28D7B5624F8249100CD0939 /* Debug */,
+				A28D7B5724F8249100CD0939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28D7B5824F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyADTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28D7B5924F8249100CD0939 /* Debug */,
+				A28D7B5A24F8249100CD0939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28D7B5B24F8249100CD0939 /* Build configuration list for PBXNativeTarget "SkyADUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28D7B5C24F8249100CD0939 /* Debug */,
+				A28D7B5D24F8249100CD0939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A28D7B2324F8248E00CD0939 /* Project object */;
+}

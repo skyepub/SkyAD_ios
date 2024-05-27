@@ -1,0 +1,74 @@
+/*
+  Localizable.strings
+  SkyAD
+
+  Created by 하늘나무 on 2020/11/11.
+  Copyright © 2020 Dev. All rights reserved.
+*/
+
+"input_hint"="검색어 입력";
+"cancel"="취소";
+"highlight"="하이라이트";
+"note"="노트";
+
+"chapter"="챕터";
+"page"="페이지";
+"search_more"="검색 계속...";
+"search_finished"="검색 완료";
+"found"="개 검색";
+
+"bookmark"="묵마크";
+"toc"="목차";
+"resume"="닫기";
+
+"delete"="삭제";
+"ok"="확인";
+
+"open"="열기";
+"open_the_first_page"="첫 페이지 열기";
+"delete_book"="삭제";
+
+"sort_by"="정렬 방법";
+"title"="제목";
+"author"="저자";
+"last_read"="마지막으로 읽음";
+"no_sort"="정렬 없음";
+
+"title_activity_setting"="Setting";
+
+"setting"="Setting";
+"layout"="Layout";
+"double_paged"="Double Paged For Landscape";
+"rotation_lock"="Lock Rotation";
+"global_pagination"="Global Pagination";
+
+"network"="Network";
+"allow3g4g"="3G/4G Download";
+
+"theme"="Theme";
+"themewhite"="Theme White";
+"themebrown"="Theme Brown";
+"themedark"="Theme Dark";
+"themeblack"="Theme Black";
+
+"page_transition_effect"="Page Transition Effect";
+"none_effect"="None";
+"slide_effect"="Slide Effect";
+"curl_effect"="Curl Effect";
+
+"voice"="Voice";
+"mediaoverlay"="MediaOverlay";
+"tts"="Text To Speech";
+"auto_start_playing"="Auto Start Playing";
+"auto_load_new_chapter"="Auto Load New Chapter";
+"highlight_text_to_voice"="Highlight Text To Voice";
+
+"global_pagination_warning"="Global Pagination enables to show the page number for the entire of book.\n
+It may take long time to finish the calculation of pages for whole book.\n
+Whenever font name or font size are changed, Global Pagination tries to calculate the total page number again.\n
+while the Global Pagination is going on, some user interfaces will be restricted to use.";
+
+"information"="Information";
+"reader"="SkyEpub SDK Advanced Demo IV In Swift";
+"skyepub"="Copyrights SkyEpub Inc.";
+
