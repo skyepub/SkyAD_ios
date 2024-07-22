@@ -368,6 +368,9 @@ class BookViewController: UIViewController,ReflowableViewControllerDataSource,Re
         // set rv's delegate to self.
         rv.delegate = self
         
+        // when globalOffset is true,the startIndex and endIdex of highlight will be 0.
+        rv.setGlobalOffset(true)
+        
         // set the font of rv
         rv.fontSize = Int32(self.getRealFontSize(fontSizeIndex: setting.fontSize))
         // set lineSpacing of rv
